@@ -11,35 +11,34 @@ export default function Section1About() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div data-aos="fade-up">
-        <div className="relative">
-          <div className="flex h-[700px] w-[500px] rounded-lg mt-10 mx-auto relative">
-            <Image
-              layout="fill"
-              src="https://ptmdsb.com/wp-content/uploads/2022/12/001C8699-9B5A-4C39-9066-76E33F6E76CF-1-1017x1536.jpg"
-              alt="director"
-            />
-          </div>
-          <div className="relative flex justify-center -top-16">
-            <div className="flex flex-col items-center justify-center border bg-blue-800 rounded-lg w-[250px]">
-              <p className="text-white text-2xl tracking-tight font-semibold">
-                Andreas Setyawan
-              </p>
-              <p className="text-white text-xl tracking-widest font-semibold">
-                President Director
-              </p>
-            </div>
+        <div className="flex h-[600px] w-full lg:w-[25vw] mx-auto mt-10 relative">
+          <Image
+            layout="fill"
+            className="rounded-lg"
+            src="https://ptmdsb.com/wp-content/uploads/2022/12/001C8699-9B5A-4C39-9066-76E33F6E76CF-1-1017x1536.jpg"
+            alt="director"
+          />
+        </div>
+        <div className="relative flex justify-center -top-16">
+          <div className="flex flex-col items-center justify-center border bg-blue-800 rounded-lg w-[250px]">
+            <p className="text-white text-2xl tracking-tight font-semibold">
+              Andreas Setyawan
+            </p>
+            <p className="text-white text-xl tracking-widest font-semibold">
+              President Director
+            </p>
           </div>
         </div>
       </div>
       <div className="flex sm:mt-10 w-full">
-        <div className="flex flex-col gap-5 w-[500px] mx-auto lg:mx-0 px-10">
+        <div className="flex flex-col gap-5 w-[500px] lg:mx-0 px-10">
           <p className="text-blue-400 font-bold text-2xl text-center">
             Preamble
           </p>
           <p className="font-bold text-xl text-center">
             Tumbuh Besar dan Kuat dalam Ketulusan dan Kejujuran
           </p>
-          <div className="flex flex-col h-atuo w-auto max-sm:ml-10 gap-5 text-wrap text-justify">
+          <div className="flex flex-col h-atuo w-auto max-sm:ml-5 gap-5 text-wrap text-justify">
             <p>
               PT. Multi Daya Sinergi Bersama merupakan perusahaan outsourcing
               karyawan atau alih daya yang didirikan pada tahun 2018, tepatnya

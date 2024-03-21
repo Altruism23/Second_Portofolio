@@ -110,7 +110,7 @@ export default function Home() {
         </div>
         {/* Image section 2 sebelah kanan */}
         <div className="max-sm:px-0 mt-10 md:h-full md:w-auto md:mt-0">
-          <div className="h-96 w-96 mx-auto relative">
+          <div className="h-[50vh] lg:w-[30vw] mx-auto relative">
             <Image
               layout="fill"
               src="https://ptmdsb.com/wp-content/uploads/2020/07/about.jpg"
@@ -187,7 +187,7 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-between mt-10 w-full gap-5">
         <div className="mx-auto">
           <div data-aos="fade-right">
-            <div className="h-[500px] w-[500px] relative">
+            <div className="h-[500px] w-[300px] sm:w-[500px] relative">
               <Image
                 layout="fill"
                 alt="..."
@@ -237,11 +237,7 @@ export default function Home() {
       <div className="relative">
         <div className="flex justify-center relative">
           <div className="absolute top-0 w-full h-[800px]">
-            <Image
-              layout="fill"
-              alt="..."
-              src="/triangle2.png"
-            ></Image>
+            <Image layout="fill" alt="..." src="/triangle2.png"></Image>
           </div>
           <div className="w-full py-10 bg-gray-200">
             <div className="flex justify-center">
@@ -348,7 +344,10 @@ export default function Home() {
       {/* section 6 */}
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-between mt-10 w-full gap-5 background6">
         <div className="mx-auto">
-          <div data-aos="fade-right" className="h-[500px] w-[500px] relative">
+          <div
+            data-aos="fade-right"
+            className="h-[30vh] w-[60vw] lg:h-[500px] lg:w-[500px] relative"
+          >
             <Image
               layout="fill"
               alt="..."

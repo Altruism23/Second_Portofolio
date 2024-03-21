@@ -49,6 +49,7 @@ export default function Cards() {
               <div className="flex flex-col items-center pb-10 hover:shadow-xl hover:bg-gradient-to-b from-white to-blue-700">
                 <div className="relative mb-3 h-24 w-24">
                   <Image
+                    layout="fill"
                     alt="..."
                     src={user.picture.medium}
                     className="rounded-full shadow-lg"
