@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GoDotFill } from "react-icons/go";
 
 export default function Section2Services() {
@@ -26,9 +27,10 @@ export default function Section2Services() {
             berpotensi bahaya yang akan terjadi.
           </p>
         </div>
-        <div>
-          <img
-            className="h-[300px] w-[300px] border shadow-xl"
+        <div className="relative h-[300px] w-[300px]">
+          <Image
+            layout="fill"
+            className="border shadow-xl"
             src="https://ptmdsb.com/wp-content/uploads/2022/12/MDSB-Security-LOGO-1.png"
             alt="mdsb security logo"
           />

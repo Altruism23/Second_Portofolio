@@ -4,6 +4,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FiClock } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,12 +15,13 @@ export default function Footer() {
           PT. Multi Daya Sumber Bersama
         </a>
         <Link href="/company-profile">
-          {" "}
-          <img
-            src="https://ptmdsb.com/wp-content/uploads/2022/11/80pxlogo.png"
-            className="h-16 w-36 mt-3"
-            alt="company profile"
-          />
+          <div className="relative h-16 w-36 mt-3">
+            <Image
+              layout="fill"
+              src="https://ptmdsb.com/wp-content/uploads/2022/11/80pxlogo.png"
+              alt="company profile"
+            />
+          </div>
         </Link>
         <p className="text-justify text-wrap text-sm mt-5">
           Multi Daya Sinergi Bersama (MDSB) adalah sebuah perusahaan berbentuk

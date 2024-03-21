@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Dropdown, Card } from "flowbite-react";
+import Image from "next/legacy/image";
 
 export default function Cards() {
   const [data, setData] = useState([]);
@@ -46,10 +47,13 @@ export default function Cards() {
                 </Dropdown>
               </div>
               <div className="flex flex-col items-center pb-10 hover:shadow-xl hover:bg-gradient-to-b from-white to-blue-700">
-                <img
-                  src={user.picture.medium}
-                  className="mb-3 rounded-full shadow-lg h-24 w-24"
-                />
+                <div className="relative mb-3 h-24 w-24">
+                  <Image
+                    alt="..."
+                    src={user.picture.medium}
+                    className="rounded-full shadow-lg"
+                  />
+                </div>
                 <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
                   {user.name.first} {user.name.last}
                 </h5>

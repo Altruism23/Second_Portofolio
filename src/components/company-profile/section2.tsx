@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Section2About() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 mt-10 px-10">
@@ -19,11 +21,14 @@ export default function Section2About() {
         </div>
       </div>
       <div className="flex justify-center items-center mt-10 md:flex md:justify-normal md:items-start md:mt-0 md:mr-5">
-        <img
-          className="h-[300px] rounded-xl"
-          src="https://ptmdsb.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-22.08.48.jpeg"
-          alt="indoor"
-        />
+        <div className="relative h-[300px] w-[500px]">
+          <Image
+            className="rounded-xl"
+            layout="fill"
+            src="https://ptmdsb.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-22-at-22.08.48.jpeg"
+            alt="indoor"
+          />
+        </div>
       </div>
     </div>
   );

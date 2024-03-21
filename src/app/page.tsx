@@ -3,6 +3,7 @@ import AnimatedCounter from "@/components/animatedcounter";
 import YouTubeVideo from "@/components/youtube";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/legacy/image";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -62,11 +63,13 @@ export default function Home() {
           </div>
           <div className="flex px-10 mt-10 max-sm:px-0">
             <div className="flex flex-row gap-10">
-              <img
-                className="h-16 sm:h-16"
-                src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/human-resources.png"
-                alt="..."
-              ></img>
+              <div className="h-16 w-16 min-w-16 min-h-16 relative">
+                <Image
+                  layout="fill"
+                  src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/human-resources.png"
+                  alt="..."
+                ></Image>
+              </div>
               <div className="flex flex-col">
                 <div>
                   <h1 className="text-lg font-semibold">
@@ -84,11 +87,13 @@ export default function Home() {
           </div>
           <div className="flex px-10 mt-10 max-sm:px-0">
             <div className="flex flex-row gap-10">
-              <img
-                className="h-16 sm:h-16"
-                src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/team.png"
-                alt="..."
-              ></img>
+              <div className="h-16 w-16 min-w-16 min-h-16 relative">
+                <Image
+                  layout="fill"
+                  src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/team.png"
+                  alt="..."
+                ></Image>
+              </div>
               <div className="flex flex-col">
                 <div>
                   <h1 className="text-lg font-semibold">Dedicated Staff</h1>
@@ -105,10 +110,13 @@ export default function Home() {
         </div>
         {/* Image section 2 sebelah kanan */}
         <div className="max-sm:px-0 mt-10 md:h-full md:w-auto md:mt-0">
-          <img
-            src="https://ptmdsb.com/wp-content/uploads/2020/07/about.jpg"
-            alt="about"
-          ></img>
+          <div className="h-96 w-96 mx-auto relative">
+            <Image
+              layout="fill"
+              src="https://ptmdsb.com/wp-content/uploads/2020/07/about.jpg"
+              alt="about"
+            ></Image>
+          </div>
         </div>
       </div>
       {/* section 3 */}
@@ -130,34 +138,46 @@ export default function Home() {
         </div>
         <div className="w-full h-auto bg-blue-700 p-[170px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center gap-32 max-sm:flex max-sm:flex-col">
           <div className="flex flex-col items-center gap-5">
-            <img
-              className="h-[5rem] w-[5rem]"
-              src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/whiteboard.png"
-            ></img>
+            <div className="w-[80px] h-[80px] relative">
+              <Image
+                layout="fill"
+                src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/whiteboard.png"
+                alt="..."
+              ></Image>
+            </div>
             <AnimatedCounter endValue={5000} />
             <p className="text-white text-xl font-bold">APPLICANTS</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <img
-              className="h-[5rem] w-[5rem]"
-              src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/people.png"
-            ></img>
+            <div className="h-[80px] w-[80px] relative">
+              <Image
+                layout="fill"
+                alt="..."
+                src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/07/people.png"
+              ></Image>
+            </div>
             <AnimatedCounter endValue={1400} />
             <p className="text-white text-xl font-bold">EMPLOYEES</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <img
-              className="h-[5rem] w-[5rem]"
-              src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/06/medal.png"
-            ></img>
+            <div className="h-[80px] w-[80px] relative">
+              <Image
+                layout="fill"
+                alt="..."
+                src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/06/medal.png"
+              ></Image>
+            </div>
             <AnimatedCounter endValue={60} />
             <p className="text-white text-xl font-bold">CLIENTS</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <img
-              className="h-[5rem] w-[5rem]"
-              src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/06/happy-face.png"
-            ></img>
+            <div className="h-[80px] w-[80px] relative">
+              <Image
+                layout="fill"
+                alt="..."
+                src="https://keenitsolutions.com/products/wordpress/reobiz/wp-content/uploads/2020/06/happy-face.png"
+              ></Image>
+            </div>
             <AnimatedCounter endValue={30} />
             <p className="text-white text-xl font-bold">JOB POSITION</p>
           </div>
@@ -167,10 +187,13 @@ export default function Home() {
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-between mt-10 w-full gap-5">
         <div className="mx-auto">
           <div data-aos="fade-right">
-            <img
-              className="h-[500px] w-auto"
-              src="https://ptmdsb.com/wp-content/uploads/2020/07/about-2.jpg"
-            ></img>
+            <div className="h-[500px] w-[500px] relative">
+              <Image
+                layout="fill"
+                alt="..."
+                src="https://ptmdsb.com/wp-content/uploads/2020/07/about-2.jpg"
+              ></Image>
+            </div>
           </div>
         </div>
         <div className="flex w-[70%] ml-10">
@@ -213,10 +236,13 @@ export default function Home() {
       {/* section 5 */}
       <div className="relative">
         <div className="flex justify-center relative">
-          <img
-            className="absolute top-0 w-full h-[800px]"
-            src="./triangle2.png"
-          ></img>
+          <div className="absolute top-0 w-full h-[800px]">
+            <Image
+              layout="fill"
+              alt="..."
+              src="/triangle2.png"
+            ></Image>
+          </div>
           <div className="w-full py-10 bg-gray-200">
             <div className="flex justify-center">
               <div className="flex flex-col">
@@ -234,10 +260,13 @@ export default function Home() {
             <div className="flex justify-center my-32">
               <div className="grid grid-cols-1 lg:grid-cols-5 sm:grid-cols-2  gap-10 my-10 px-10">
                 <div className="flex flex-col bg-gradient-to-b from-white to-blue-100 h-[350px]">
-                  <img
-                    className="h-16 w-16 mt-10 mx-auto"
-                    src="https://ptmdsb.com/wp-content/uploads/2022/11/png-security-1.png"
-                  ></img>
+                  <div className="h-[64px] w-[64px] mt-10 mx-auto relative">
+                    <Image
+                      layout="fill"
+                      alt="..."
+                      src="https://ptmdsb.com/wp-content/uploads/2022/11/png-security-1.png"
+                    ></Image>
+                  </div>
                   <p className="font-bold text-[18px] text-center">
                     MDSB Security Service
                   </p>
@@ -248,10 +277,13 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col bg-gradient-to-b from-white to-blue-100">
-                  <img
-                    className="h-16 w-16 mt-10 mx-auto"
-                    src="https://ptmdsb.com/wp-content/uploads/2022/11/Cleaning-png-1.png"
-                  ></img>
+                  <div className="h-[64px] w-[64px] mt-10 mx-auto relative">
+                    <Image
+                      layout="fill"
+                      alt="..."
+                      src="https://ptmdsb.com/wp-content/uploads/2022/11/Cleaning-png-1.png"
+                    ></Image>
+                  </div>
                   <p className="font-bold text-[18px] text-center">
                     MDSB Cleaning Service
                   </p>
@@ -261,10 +293,13 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col bg-gradient-to-b from-white to-blue-100 h-[350px]">
-                  <img
-                    className="h-16 w-16 mt-10 mx-auto"
-                    src="https://ptmdsb.com/wp-content/uploads/2022/11/administrasi.png"
-                  ></img>
+                  <div className="h-[64px] w-[64px] mt-10 mx-auto relative">
+                    <Image
+                      layout="fill"
+                      alt="..."
+                      src="https://ptmdsb.com/wp-content/uploads/2022/11/administrasi.png"
+                    ></Image>
+                  </div>
                   <p className="font-bold text-[18px] text-center">
                     Administration Staff
                   </p>
@@ -274,10 +309,13 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col bg-gradient-to-b from-white to-blue-100 h-[350px]">
-                  <img
-                    className="h-16 w-16 mt-10 mx-auto"
-                    src="https://ptmdsb.com/wp-content/uploads/2022/11/operationalss.png"
-                  ></img>
+                  <div className="h-[64px] w-[64px] mt-10 mx-auto relative">
+                    <Image
+                      layout="fill"
+                      alt="..."
+                      src="https://ptmdsb.com/wp-content/uploads/2022/11/operationalss.png"
+                    ></Image>
+                  </div>
                   <p className="font-bold text-[18px] text-center">
                     Operational Staff
                   </p>
@@ -287,10 +325,13 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col bg-gradient-to-b from-white to-blue-100 h-[350px]">
-                  <img
-                    className="h-16 w-16 mt-10 mx-auto"
-                    src="https://ptmdsb.com/wp-content/uploads/2022/11/operational.png"
-                  ></img>
+                  <div className="h-[64px] w-[64px] mt-10 mx-auto relative">
+                    <Image
+                      layout="fill"
+                      alt="..."
+                      src="https://ptmdsb.com/wp-content/uploads/2022/11/operational.png"
+                    ></Image>
+                  </div>
                   <p className="font-bold text-[18px] text-center">
                     Supporting Staff
                   </p>
@@ -307,11 +348,12 @@ export default function Home() {
       {/* section 6 */}
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-between mt-10 w-full gap-5 background6">
         <div className="mx-auto">
-          <div data-aos="fade-right">
-            <img
-              className="h-[500px] w-auto"
+          <div data-aos="fade-right" className="h-[500px] w-[500px] relative">
+            <Image
+              layout="fill"
+              alt="..."
               src="https://ptmdsb.com/wp-content/uploads/2020/07/testimonial.jpg"
-            ></img>
+            ></Image>
           </div>
         </div>
         <div className="my-20 px-10 sm:px-0">
@@ -327,7 +369,8 @@ export default function Home() {
               Bersama
             </p>
             <p className="italic text-center text-gray-600 text-wrap ">
-              Sangat membantu kami dalam menyediakan kebutuhan SDM berkualitas.&quot;
+              Sangat membantu kami dalam menyediakan kebutuhan SDM
+              berkualitas.&quot;
             </p>
           </div>
         </div>

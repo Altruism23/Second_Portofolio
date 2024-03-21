@@ -1,3 +1,5 @@
+import Image from "next/legacy/image";
+
 export default function TestimonialService() {
   return (
     <section
@@ -29,12 +31,12 @@ export default function TestimonialService() {
                   </svg>
                   <blockquote className="relative">
                     <p className="text-lg tracking-tight text-slate-900">
-                      &quot;Our company was facing constant threats of cyber attacks,
-                      which were jeopardizing our sensitive data. Thanks to the
-                      proactive security measures implemented by [MDSB Security
-                      Service], we now feel much more secure. Their expertise
-                      and swift response to potential threats have been
-                      invaluable to our business.&quot;
+                      &quot;Our company was facing constant threats of cyber
+                      attacks, which were jeopardizing our sensitive data.
+                      Thanks to the proactive security measures implemented by
+                      [MDSB Security Service], we now feel much more secure.
+                      Their expertise and swift response to potential threats
+                      have been invaluable to our business.&quot;
                     </p>
                   </blockquote>
                   <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
@@ -44,11 +46,14 @@ export default function TestimonialService() {
                       </div>
                     </div>
                     <div className="overflow-hidden rounded-full bg-slate-50">
-                      <img
-                        alt=""
-                        className="h-14 w-14 object-cover bg-transparent"
-                        src="https://randomuser.me/api/portraits/men/15.jpg"
-                      />
+                      <div className="h-14 w-14 relative">
+                        <Image
+                          layout="fill"
+                          alt=""
+                          className="bg-transparent"
+                          src="https://randomuser.me/api/portraits/men/15.jpg"
+                        />
+                      </div>
                     </div>
                   </figcaption>
                 </figure>
@@ -69,8 +74,8 @@ export default function TestimonialService() {
                   </svg>
                   <blockquote className="relative">
                     <p className="text-lg tracking-tight text-slate-900">
-                      &quot;As a small business owner, I was worried about the safety
-                      of my premises, especially during off-hours. [MDSB
+                      &quot;As a small business owner, I was worried about the
+                      safety of my premises, especially during off-hours. [MDSB
                       Security Service] provided top-notch security personnel
                       who have not only deterred any potential intruders but
                       also ensured the safety of my employees during late
@@ -85,11 +90,14 @@ export default function TestimonialService() {
                       </div>
                     </div>
                     <div className="overflow-hidden rounded-full bg-slate-50">
-                      <img
-                        alt=""
-                        className="h-14 w-14 object-cover bg-transparent"
-                        src="https://randomuser.me/api/portraits/women/15.jpg"
-                      />
+                      <div className="h-14 w-14 relative">
+                        <Image
+                          layout="fill"
+                          alt=""
+                          className="object-cover bg-transparent"
+                          src="https://randomuser.me/api/portraits/women/15.jpg"
+                        />
+                      </div>
                     </div>
                   </figcaption>
                 </figure>
@@ -110,13 +118,14 @@ export default function TestimonialService() {
                   </svg>
                   <blockquote className="relative">
                     <p className="text-lg tracking-tight text-slate-900">
-                      &quot;We hired [MDSB Service Company] to assess and enhance the
-                      security measures in our residential community. Their team
-                      conducted a thorough analysis and implemented various
-                      measures, including surveillance systems and access
-                      control. The difference in our community&apos;s safety and
-                      peace of mind is remarkable. We highly recommend their
-                      services to anyone concerned about security.&quot;
+                      &quot;We hired [MDSB Service Company] to assess and
+                      enhance the security measures in our residential
+                      community. Their team conducted a thorough analysis and
+                      implemented various measures, including surveillance
+                      systems and access control. The difference in our
+                      community&apos;s safety and peace of mind is remarkable.
+                      We highly recommend their services to anyone concerned
+                      about security.&quot;
                     </p>
                   </blockquote>
                   <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
@@ -126,11 +135,14 @@ export default function TestimonialService() {
                       </div>
                     </div>
                     <div className="overflow-hidden rounded-full bg-slate-50">
-                      <img
-                        alt=""
-                        className="h-14 w-14 object-cover bg-transparent"
-                        src="https://randomuser.me/api/portraits/men/10.jpg"
-                      />
+                      <div className="relative h-14 w-14">
+                        <Image
+                          layout="fill"
+                          alt=""
+                          className="object-cover bg-transparent"
+                          src="https://randomuser.me/api/portraits/men/10.jpg"
+                        />
+                      </div>
                     </div>
                   </figcaption>
                 </figure>

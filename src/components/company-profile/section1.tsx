@@ -1,6 +1,7 @@
 "use client";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Section1About() {
@@ -11,11 +12,13 @@ export default function Section1About() {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div data-aos="fade-up">
         <div className="relative">
-          <img
-            className="flex mx-auto mt-10 h-auto w-[500px] rounded-lg"
-            src="https://ptmdsb.com/wp-content/uploads/2022/12/001C8699-9B5A-4C39-9066-76E33F6E76CF-1-1017x1536.jpg"
-            alt="director"
-          />
+          <div className="flex h-[700px] w-[500px] rounded-lg mt-10 mx-auto relative">
+            <Image
+              layout="fill"
+              src="https://ptmdsb.com/wp-content/uploads/2022/12/001C8699-9B5A-4C39-9066-76E33F6E76CF-1-1017x1536.jpg"
+              alt="director"
+            />
+          </div>
           <div className="relative flex justify-center -top-16">
             <div className="flex flex-col items-center justify-center border bg-blue-800 rounded-lg w-[250px]">
               <p className="text-white text-2xl tracking-tight font-semibold">

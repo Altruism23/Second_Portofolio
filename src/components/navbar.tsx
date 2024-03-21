@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -18,11 +19,13 @@ export default function Navbar() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="https://ptmdsb.com/wp-content/uploads/2022/11/80pxlogo.png"
-              className="h-16"
-              alt="Company Logo"
-            />
+            <div className="relative h-16 w-32">
+              <Image
+                layout="fill"
+                src="https://ptmdsb.com/wp-content/uploads/2022/11/80pxlogo.png"
+                alt="Company Logo"
+              />
+            </div>
           </a>
           <button
             onClick={toggleMenu}
